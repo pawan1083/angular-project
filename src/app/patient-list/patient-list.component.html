@@ -1,0 +1,25 @@
+<table class="student-container" id="customers">
+  <thead>
+    <tr>
+      <th>S.No</th>
+      <th>Patient Id</th>
+      <th>Patient Name</th>
+      <th>Patient Age</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let patient of patients; index as i">
+      <td>{{i+1}}</td>
+      <td>{{patient.pid}}</td>
+      <td>{{patient.pname}}</td>
+      <td>{{patient.page}}</td>
+      <!-- <td><button class="btn-danger" (click)="deletepatient(patient)"> Delete</button> -->
+      <td>
+        <button mat-button color="accent" (click)="deletepatient(patient)">
+          <span>Delete</span>
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>

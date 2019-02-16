@@ -1,0 +1,24 @@
+<mat-card class="student-container">
+  <mat-card-title>Register Patient</mat-card-title>
+  <mat-card-content>
+    <form class="example-form">
+
+      
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Patient Id" name="pid" [(ngModel)]="patient.pid">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Patient name" name="pname" [(ngModel)]="patient.pname">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Age" name="page" [(ngModel)]="patient.page">
+      </mat-form-field>
+    </form>
+  </mat-card-content>
+  <mat-card-actions align="end">
+    <button mat-flat-button color="primary" class="course-actions" (click)="onRegister()">Register</button>
+    <!-- <button mat-flat-button color="primary" class="course-actions" (click)="onCancel()">Cancel</button> -->
+  </mat-card-actions>
+</mat-card>
